@@ -10,7 +10,11 @@
 
         <c:forEach var = "item" begin = "1" end = "20" step = "1">
 
+            <c:if test = "${(item % 3) == 0}">
+
             ${item} <br />
+
+            </c:if>
 
         </c:forEach>
         
