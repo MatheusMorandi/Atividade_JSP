@@ -10,6 +10,8 @@
 
     }
 
+    request.setAttribute("tabuada", resultado);
+
 %>
 <!DOCTYPE html>
     <html lang="pt-br">
@@ -47,6 +49,18 @@
         
         %>
         
+        </ul>
+
+        <hr />
+
+        <ul>
+
+        <c:forEach var = "num" items = "${tabuada}">
+
+                <li>${num}</li>
+
+        </c:forEach>
+
         </ul>
 
     </body>
